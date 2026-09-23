@@ -1,0 +1,135 @@
+/* Configuração geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #171923;
+  color: #f5f5f5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Caixa principal */
+fieldset {
+  border: 2px solid #3a3f55;
+  background-color: #252936;
+
+  padding: 30px;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+  width: 100%;
+  max-width: 380px;
+
+  box-sizing: border-box;
+}
+
+/* Título */
+h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  font-size: 1.5rem;
+  text-align: center;
+
+  color: #61dafb;
+}
+
+/* Espaçamento dos campos */
+div {
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: 0.9rem;
+  font-weight: bold;
+
+  color: #d6d8e0;
+}
+
+/* Campos */
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+
+  padding: 13px;
+
+  background-color: #191b24;
+
+  border: 1px solid #454b63;
+  border-radius: 7px;
+
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Efeito ao selecionar o campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+  border-color: #61dafb;
+
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.3);
+}
+
+/* Checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.checkbox-container label {
+  display: inline;
+
+  margin-bottom: 0;
+
+  font-weight: normal;
+
+  cursor: pointer;
+}
+
+/* Botão */
+button {
+  width: 100%;
+
+  padding: 13px;
+
+  background-color: #61dafb;
+
+  color: #171923;
+
+  border: none;
+  border-radius: 7px;
+
+  font-weight: bold;
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+  margin-top: 5px;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background-color: #21a1f1;
+
+  transform: scale(1.02);
+}

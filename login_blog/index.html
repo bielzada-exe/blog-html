@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição no Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+    <form action="/cadastro" method="post">
+
+      <fieldset>
+        <h1>Faça sua inscrição</h1>
+        <p class="descricao">Preencha seus dados para acompanhar nossas novidades.</p>
+
+        <div class="campos-linha">
+
+          <div class="campo">
+            <label for="nome">Seu nome</label>
+            <input 
+              id="nome" 
+              name="nome" 
+              type="text" 
+              placeholder="Digite seu nome"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+          <div class="campo">
+            <label for="email">Seu e-mail</label>
+            <input 
+              id="email" 
+              name="email" 
+              type="email" 
+              placeholder="exemplo@email.com"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+        </div>
+
+        <div class="campo">
+          <label for="plano">Escolha seu plano</label>
+
+          <select id="plano" name="plano">
+            <option value="free">Plano Gratuito</option>
+            <option value="pro">Plano Premium</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <input 
+            id="termos" 
+            name="termos" 
+            type="checkbox" 
+            value="aceito"
+            required
+          >
+
+          <label for="termos">
+            Concordo com os termos e condições
+          </label>
+        </div>
+
+        <button type="submit">Criar cadastro</button>
+
+      </fieldset>
+
+    </form>
+  </main>
+
+</body>
+</html>
