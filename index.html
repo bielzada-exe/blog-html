@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia Agora</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>📰 Notícia Agora</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main id="noticias">
+
+        <article>
+            <h2>Novas tecnologias estão mudando o mundo</h2>
+
+            <p>
+                A tecnologia está avançando rapidamente e trazendo
+                novas possibilidades para a sociedade.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                alt="Computador e tecnologia"
+                width="500">
+        </article>
+
+        <article>
+            <h2>Educação ganha novas ferramentas digitais</h2>
+
+            <p>
+                Escolas e estudantes estão utilizando ferramentas
+                digitais para melhorar o aprendizado.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+                alt="Sala de aula"
+                width="500">
+        </article>
+
+    </main>
+
+    <aside id="inscricao">
+
+        <h2>Receba nossas notícias</h2>
+
+        <form method="get">
+
+            <label for="nome">Nome:</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                minlength="3"
+                required>
+
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required>
+
+            <br><br>
+
+            <label for="idade">Idade:</label>
+            <input
+                type="number"
+                id="idade"
+                name="idade"
+                min="18"
+                max="120"
+                required>
+
+            <br><br>
+
+            <label for="assunto">Assunto:</label>
+
+            <select id="assunto" name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="educacao">Educação</option>
+                <option value="esportes">Esportes</option>
+            </select>
+
+            <br><br>
+
+            <input
+                type="checkbox"
+                id="termos"
+                name="termos"
+                required>
+
+            <label for="termos">
+                Aceito os termos
+            </label>
+
+            <br><br>
+
+            <button type="submit">Inscrever-se</button>
+
+        </form>
+
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Notícia Agora - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
+```
